@@ -26,7 +26,7 @@ class OVOEnergy:
         self._customer_id = None
         self._username = None
 
-    async def authenticate(self, username, password, account=None) -> bool:
+    async def authenticate(self, username, password, account="20113693") -> bool:
         """Authenticate."""
         async with aiohttp.ClientSession() as session:
             response = await session.post(
